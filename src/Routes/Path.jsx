@@ -33,7 +33,8 @@ export default function Router(){
             ]
         },
         { path: "*", element: <Navigate to={Page404} replace /> },
-    ])
+    ],
+    { basename: "/Cunstruction_Web" });
 }
 
 const LoginPage = Loadable(lazy(() => import("../Pages/AuthPage/Login")));
